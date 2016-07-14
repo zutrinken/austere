@@ -1,0 +1,52 @@
+{{!< default}}
+
+{{#author}}
+
+<header id="header" class="header{{#if cover}} has-cover{{else}}{{#if @blog.cover}} has-cover{{/if}}{{/if}}">
+	<div class="inner">
+		<span class="header-title">
+			<h1 class="header-name">{{name}} <em>{{ ../pagination.total}}</em></h1>
+			{{#if image}}
+			<figure class="header-image">
+				<img src="{{image}}" alt="{{name}}" />
+			</figure>
+			{{/if}}
+			{{#if bio}}
+				<span class="header-description">{{bio}}</span>
+			{{/if}}
+			<span class="header-meta">
+				{{#if location}}
+				<span><i class="icon-location"></i> {{location}}</span>
+				{{/if}}
+				{{#if website}}
+				<span><a target="_blank" href="{{website}}"><i class="icon-link"></i> Website</a></span>
+				{{/if}}
+				{{#if twitter}}
+				<span><a target="_blank" href="https://twitter.com/{{twitter}}"><i class="icon-twitter"></i> Twitter</a></span>
+				{{/if}}
+				{{#if facebook}}
+				<span><a target="_blank" href="https://facebook.com/{{facebook}}"><i class="icon-facebook"></i> Facebook</a></span>
+				{{/if}}
+			</span>
+		</span>
+	</div>
+	{{#if cover}}
+	<div class="header-cover" style="background-image: url('{{cover}}');"></div>
+	{{else}}
+	{{#if @blog.cover}}
+	<div class="header-cover" style="background-image: url('{{@blog.cover}}');"></div>
+	{{/if}}
+	{{/if}}
+</header>
+
+{{/author}}
+
+<div id="post-index" class="container">
+
+	<main class="content" role="main">
+	
+		{{> "loop"}}
+	
+	</main>
+
+</div>

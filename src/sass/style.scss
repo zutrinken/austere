@@ -679,8 +679,9 @@ body {
 				margin: 0;
 				
 				a {
-					padding-left: 0.25em;
-					padding-right: 0.25em;
+					display: inline-block;
+					padding-left: 0.5em;
+					padding-right: 0.5em;
 				}
 			}
 		}
@@ -739,8 +740,17 @@ body {
 				}
 				
 				&.icon {
-					width: 33.333%;
-					float: left;
+
+					a {
+						width: 2.286em;
+						padding-left: 1em;
+						padding-right: 1em;
+						
+						&:hover,
+						&:focus {
+							color: $color-primary-default;
+						}
+					}
 				}
 			}
 		}

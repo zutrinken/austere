@@ -6,12 +6,14 @@
 			<a class="{{slug}}{{#if current}} current{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
 		</li>
 		{{/foreach}}
-		{{#if @blog.twitter}}
-		<li class="menu-list-item icon"><a class="rss" href="{{twitter_url}}" title="{{@blog.twitter}}"><i class="icon-twitter"></i></a></li>
-		{{/if}}
-		{{#if @blog.facebook}}
-		<li class="menu-list-item icon"><a class="rss" href="{{facebook_url}}" title="{{@blog.facebook}}"><i class="icon-facebook"></i></a></li>
-		{{/if}}
-		<li class="menu-list-item icon"><a class="rss" href="{{@blog.url}}/rss/" title="Feed"><i class="icon-rss"></i></a></li>
+		<li class="menu-list-item icon">
+			{{#if @blog.twitter}}
+			<a class="rss" href="{{twitter_url}}" title="{{@blog.twitter}}"><i class="icon-twitter"></i></a>
+			{{/if}}
+			{{#if @blog.facebook}}
+			<a class="rss" href="{{facebook_url}}" title="{{@blog.facebook}}"><i class="icon-facebook"></i></a>
+			{{/if}}
+			<a class="rss" href="{{@blog.url}}/rss/" title="Feed"><i class="icon-rss"></i></a>
+		</li>
 	</ul>
 </div>

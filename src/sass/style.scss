@@ -572,14 +572,56 @@ body {
 	&:focus {
 		color: $color-primary-active;
 		background: $color-gray-97;
+		
+		.menu-button-bar {
+			background: $color-primary-active;
+		}
 	}
 	
-	i {
+	.menu-button-bar {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -1px;
+		margin-left: -0.5em;
 		display: block;
-		color: inherit;
+		width: 1em;
+		height: 2px;
+		border-radius: 1px;
+		background: $color-primary-default;
+		
 		transition: all ease-out 0.2s;
 		transform-style: preserve-3d;
 		transform: rotate(0);
+
+		&.menu-button-bar-1 {
+			transform: translateY(-0.334em);
+		}
+		
+		&.menu-button-bar-2 {}
+		
+		&.menu-button-bar-3 {
+			transform: translateY(0.334em);
+		}
+	}
+	
+	&.active {
+		
+		.menu-button-bar {
+	
+			&.menu-button-bar-1 {
+				transform: translateY(0) rotate(-135deg);
+			}
+			
+			&.menu-button-bar-2 {
+				width: 2px;
+				margin-left: -1px;
+			}
+			
+			&.menu-button-bar-3 {
+				transform: translateY(0) rotate(135deg);
+			}
+		}
 	}
 }
 
@@ -1354,7 +1396,7 @@ body {
 .post-nav {
 	position: relative;
 	margin-top: 8em;
-	z-index: 100;
+	z-index: 10;
 	background: $color-gray-97;
 	display: flex;
 	align-items: stretch;

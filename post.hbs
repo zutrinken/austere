@@ -52,15 +52,29 @@
 			<nav class="post-nav">
 				{{#next_post}}
 					<a class="post-nav-item post-nav-next" href="{{url absolute="true"}}" title="{{title}}">
-						<span class="post-nav-icon">
-							<i class="icon-arrow-left"></i>
+						<span class="post-nav-post{{#if image}} has-cover{{/if}}">
+							{{#if image}}
+							<figure class="post-nav-image" style="background-image: url({{image}})"></figure>
+							{{/if}}
+							<span class="post-nav-icon">
+								<i class="icon-arrow-left"></i>
+							</span>
+							<h4 class="post-nav-title">{{title}}</h4>
+							<p class="post-nav-excerpt">{{excerpt words="19"}}&hellip;</p>
 						</span>
 					</a>
 				{{/next_post}}
 				{{#prev_post}}
 					<a class="post-nav-item post-nav-prev" href="{{url absolute="true"}}" title="{{title}}">
-						<span class="post-nav-icon">
-							<i class="icon-arrow-right"></i>
+						<span class="post-nav-post{{#if image}} has-cover{{/if}}">
+							{{#if image}}
+							<figure class="post-nav-image" style="background-image: url({{image}})"></figure>
+							{{/if}}
+							<span class="post-nav-icon">
+								<i class="icon-arrow-right"></i>
+							</span>
+							<h4 class="post-nav-title">{{title}}</h4>
+							<p class="post-nav-excerpt">{{excerpt words="19"}}&hellip;</p>
 						</span>
 					</a>
 				{{/prev_post}}

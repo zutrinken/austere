@@ -5,14 +5,14 @@
 <header id="header" class="header{{#if cover}} has-cover{{else}}{{#if @blog.cover}} has-cover{{/if}}{{/if}}">
 	<div class="inner">
 		<span class="header-title">
-			<h1 class="header-name">{{name}} <em>{{ ../pagination.total}}</em></h1>
 			{{#if image}}
 			<figure class="header-image">
 				<img src="{{image}}" alt="{{name}}" />
 			</figure>
 			{{/if}}
+			<h1 class="header-name">{{name}} <em>{{ ../pagination.total}}</em></h1>
 			{{#if bio}}
-				<span class="header-description">{{bio}}</span>
+			<span class="header-description">{{bio}}</span>
 			{{/if}}
 			<span class="header-meta">
 				{{#if location}}

@@ -929,6 +929,13 @@ body {
 		border-radius: 3em;
 		border: 2px solid $color-primary-default;
 		background: $color-primary-active;
+		
+		@media only screen and (max-width: $breakpoint-phone) {
+			float: none;
+			width: 3em;
+			height: 3em;
+			margin: -4.25em 0 1.25em 0;
+		}
 
 		img {
 			width: 100%;

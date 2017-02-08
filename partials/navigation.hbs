@@ -12,12 +12,16 @@
 		{{/foreach}}
 		<li class="menu-list-item icon">
 			{{#if @blog.twitter}}
-			<a class="rss" href="{{twitter_url}}" title="{{@blog.twitter}}"><i class="icon-twitter"></i></a>
+			<a class="twitter" href="{{twitter_url}}" title="{{@blog.twitter}}"><i class="icon-twitter"></i></a>
 			{{/if}}
 			{{#if @blog.facebook}}
-			<a class="rss" href="{{facebook_url}}" title="{{@blog.facebook}}"><i class="icon-facebook"></i></a>
+			<a class="facebook" href="{{facebook_url}}" title="{{@blog.facebook}}"><i class="icon-facebook"></i></a>
 			{{/if}}
+			{{#if @labs.subscribers}}
+			<a class="subscribe" href="{{@blog.url}}/subscribe/"><i class="icon-mail"></i></a>
+			{{else}}
 			<a class="rss" href="{{@blog.url}}/rss/" title="Feed"><i class="icon-rss"></i></a>
+			{{/if}}
 		</li>
 	</ul>
 </div>

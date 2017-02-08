@@ -168,7 +168,7 @@ jQuery(function($) {
 		$('a[href^="' + window.location.origin + '"], .post-image a, .post-title a, .post-more a, .post-meta a, .post-tags a, #pagination a').each(function() {
 			var link = $(this);
 
-			if(!link.hasClass('rss')) {
+			if(!link.hasClass('rss') && !link.hasClass('subscribe')) {
 				link.addClass('js-ajax-link');
 
 				if (link.attr('href').indexOf('page') > -1) {

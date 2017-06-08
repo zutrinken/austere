@@ -539,7 +539,7 @@ body {
    ========================================================================== */
 
 #nav {
-	position: fixed;
+	position: relative;
 	width: 100%;
 	height: 4em;
 	background: #fff;
@@ -553,25 +553,35 @@ body {
 	}
 }
 
+.menu-hidden {
+	
+	#nav {
+		background: transparent;
+		border: 0;
+	}
+}
+
 #menu-button {
 	position: absolute;
 	left: 0;
 	display: none;
-	width: 2.667em;
-	height: 2.667em;
+	width: 2em;
+	height: 2em;
+	margin: 0.334em;
 	line-height: 2.667em;
 	font-size: 1.5em;
 	text-align: center;
-	border-right: 1px solid $color-gray-90;
 	cursor: pointer;
-	transition: all ease-out 0.1s;
+	background: #fff;
+	border: 1px solid $color-gray-97;
+	border-radius: 2px;
+	transition: all ease-out 0.2s;
 	color: $color-primary-default;
 	z-index: 120;
 	
 	&:hover,
 	&:focus {
 		color: $color-primary-active;
-		background: $color-gray-97;
 		
 		.menu-button-bar {
 			background: $color-primary-active;
@@ -734,13 +744,12 @@ body {
 
 	#menu {
 		position: absolute;
-		top: 100%;
-		margin-top: 1px;
+		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		padding-bottom: 4em;
-		overflow-y: scroll;
+		padding-top: 4em;
+		overflow-y: auto;
 		background: $color-gray-25;
 		transition: all ease-out 0.2s;
 		opacity: 0;
@@ -754,7 +763,7 @@ body {
 				text-align: center;
 	
 				a {
-					padding-left: 1.143em;
+
 					color: $color-gray-85;
 					
 					&:hover,
@@ -763,21 +772,11 @@ body {
 					}
 					
 					&:before {
-						bottom: 0;
-						width: 0;
-						height: 100%;
-						padding: 0;
-						margin-left: 0;
-						border-bottom: 0;
-						border-left: 3px solid transparent;
+						display: none;
 					}
 
 					&.current {
 						color: #fff;
-
-						&:before {
-							border-left-color: $color-primary-default;
-						}
 					}
 				}
 				

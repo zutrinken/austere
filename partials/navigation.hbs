@@ -12,15 +12,15 @@
 		{{/foreach}}
 		<li class="menu-list-item icon">
 			{{#if @blog.twitter}}
-			<a class="twitter" href="{{twitter_url}}" title="{{@blog.twitter}}"><i class="icon-twitter"></i></a>
+			<a class="twitter" href="{{twitter_url}}" title="{{@blog.twitter}}"><i class="icon-twitter"></i> <em>Twitter</em></a>
 			{{/if}}
 			{{#if @blog.facebook}}
-			<a class="facebook" href="{{facebook_url}}" title="{{@blog.facebook}}"><i class="icon-facebook"></i></a>
+			<a class="facebook" href="{{facebook_url}}" title="{{@blog.facebook}}"><i class="icon-facebook"></i> <em>Facebook</em></a>
 			{{/if}}
 			{{#if @labs.subscribers}}
-			<a class="subscribe" href="{{@blog.url}}/subscribe/"><i class="icon-mail"></i></a>
+			<a class="subscribe" href="{{@blog.url}}/subscribe/"><i class="icon-mail"></i> <em>Subscribe</em></a>
 			{{else}}
-			<a class="rss" href="{{@blog.url}}/rss/" title="Feed"><i class="icon-rss"></i></a>
+			<a class="rss" href="{{@blog.url}}/rss/" title="Feed"><i class="icon-rss"></i> <em>Feed</em></a>
 			{{/if}}
 		</li>
 	</ul>

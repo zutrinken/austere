@@ -539,7 +539,7 @@ body {
    ========================================================================== */
 
 #nav {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 4em;
 	background: #fff;
@@ -574,7 +574,7 @@ body {
 	cursor: pointer;
 	background: #fff;
 	border: 1px solid $color-gray-97;
-	border-radius: 2px;
+	border-radius: 4px;
 	transition: all ease-out 0.2s;
 	color: $color-primary-default;
 	z-index: 120;
@@ -734,6 +734,11 @@ body {
 					display: inline-block;
 					padding-left: 0.5em;
 					padding-right: 0.5em;
+					
+					em {
+						display: none;
+						font-style: normal;
+					}
 				}
 			}
 		}
@@ -760,10 +765,10 @@ body {
 			.menu-list-item {
 				float: none;
 				margin-right: 0;
-				text-align: center;
 	
 				a {
-
+					padding-left: 2em;
+					padding-right: 2em;
 					color: $color-gray-85;
 					
 					&:hover,
@@ -783,13 +788,14 @@ body {
 				&.icon {
 
 					a {
-						width: 2.286em;
-						padding-left: 1em;
-						padding-right: 1em;
+						display: block;
+						padding-left: 2em;
+						padding-right: 2em;
 						
-						&:hover,
-						&:focus {
-							color: $color-primary-default;
+						em {
+							display: inline-block;
+							margin-left: 0.667em;
+							color: $color-gray-50;
 						}
 					}
 				}

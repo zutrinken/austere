@@ -388,8 +388,13 @@ iframe {
 	}
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	background: #fafafa;
+	overflow-x: hidden;
 }
 
 .inner {
@@ -820,10 +825,6 @@ body {
 #header {
 	position: relative;
 	padding: 10em 0 4em;
-	
-	&.has-cover {
-
-	}
 
 	.inner {
 		position: relative;
@@ -895,6 +896,17 @@ body {
 	}
 
 	&.has-cover {
+		
+		@media only screen and (max-width: $breakpoint-tablet) {
+			padding-top: 0;
+		}
+		
+		.inner {
+
+			@media only screen and (max-width: $breakpoint-tablet) {
+				padding-top: 10em;
+			}
+		}
 
 		.header-name {
 			color: #fff;
@@ -1040,6 +1052,20 @@ body {
 	}
 }
 
+.menu-hidden {
+	
+	#header {
+
+		&.has-cover {
+			padding-top: 0;
+			
+			.inner {
+				padding-top: 10em;
+			}
+		}
+	}
+}
+
 /* ==========================================================================
    Post
    ========================================================================== */
@@ -1097,9 +1123,13 @@ body {
 		
 		&.has-cover {
 			margin-bottom: -2em;
+			
+			@media only screen and (max-width: $breakpoint-tablet) {
+				padding-top: 0;
+			}
 
 			.inner {
-				padding-top: 8em;
+				padding-top: 10em;
 			}
 		}
 		
@@ -1426,7 +1456,6 @@ body {
 	z-index: 10;
 	display: flex;
 	align-items: stretch;
-	justify-content: center;
 	
 	@media only screen and (max-width: $breakpoint-tablet) {
 		display: block;
@@ -1441,7 +1470,6 @@ body {
 	.post-nav-item {
 		position: relative;
 		display: flex;
-		max-width: 50%;
 		box-sizing: border-box;
 		transition: all ease-out 0.1s;
 		background: $color-gray-97;

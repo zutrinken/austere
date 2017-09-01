@@ -820,10 +820,9 @@ body {
 #header {
 	position: relative;
 	padding: 10em 0 4em;
-	border-bottom: 1px solid $color-gray-90;
 	
 	&.has-cover {
-		border-bottom: 0;
+
 	}
 
 	.inner {
@@ -832,6 +831,8 @@ body {
 	}
 
 	.header-title {
+		position: relative;
+		z-index: 4;
 		display: block;
 	}
 	
@@ -885,8 +886,8 @@ body {
 				height: 100%;
 				left: 0;
 				top: 0;
-				padding: 0.125em 0;
-				margin: -0.125em 0;
+				padding: 2px 0;
+				margin: -1px 0 0 1px;
 				background: $color-primary-default;
 				transform: rotate(10deg);
 			}
@@ -914,6 +915,7 @@ body {
 		display: block;
 		color: $color-gray-65;
 		position: relative;
+		margin: 0.25em auto 0;
 	}
 
 	&.has-cover {
@@ -927,11 +929,11 @@ body {
 
 	.header-image {
 		float: left;
-		width: 4em;
-		height: 4em;
-		margin: 0.75em 1em 1.25em 0.5em;
+		width: 5.5em;
+		height: 5.5em;
+		margin: 0 1em 1em 0;
 		overflow: hidden;
-		border-radius: 3em;
+		border-radius: 4px;
 		border: 2px solid $color-primary-default;
 		background: $color-primary-active;
 		
@@ -1003,11 +1005,15 @@ body {
 
 	.header-cover {
 		position: absolute;
-		width: 100%;
-		height: 100%;
 		top: 0;
 		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 2em 1em;
+		margin: -2em -1em;
 		background: no-repeat scroll center center / cover;
+		border-radius: 4px;
+		overflow: hidden;
 		z-index: 1;
 
 			&:before {
@@ -1085,12 +1091,16 @@ body {
 
 	.post-header {
 		position: relative;
-		padding: 10em 0 0;
+		padding: 10em 0 4em;
+		margin-bottom: -4em;
 		transition: all ease-out 0.6s;
 		
 		&.has-cover {
-			padding: 16em 0 2em;
-			margin-bottom: 6em;
+			margin-bottom: -2em;
+
+			.inner {
+				padding-top: 8em;
+			}
 		}
 		
 		.inner {
@@ -1123,12 +1133,16 @@ body {
 		
 		.post-cover {
 			position: absolute;
-			width: 100%;
-			height: 100%;
 			top: 0;
 			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 2em;
+			margin: -2em;
 			background: no-repeat scroll center center / cover;
-			z-index: 1;
+			border-radius: 4px;
+			overflow: hidden;
+			z-index: -1;
 
 			&:before {
 				content: '';
@@ -1143,13 +1157,13 @@ body {
 			&:after {
 				position: absolute;
 				width: 100%;
-				height: 12em;
+				height: 100%;
 				left: 0;
 				bottom: 0;
 				z-index: 8;
 				content: '';
-				background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%);
-				background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%);
+				background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%);
+				background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%);
 			}
 		}
 	}

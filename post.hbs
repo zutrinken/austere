@@ -14,10 +14,10 @@
 					</span>
 					<div class="clear"></div>
 					<h1 class="post-title">{{{title}}}</h1>
+					{{#if feature_image}}
+					<div class="post-cover" style="background-image: url('{{img_url feature_image}}');"></div>
+					{{/if}}
 				</div>
-				{{#if feature_image}}
-				<div class="post-cover" style="background-image: url('{{img_url feature_image}}');"></div>
-				{{/if}}
 			</header>
 		
 			<div class="inner">

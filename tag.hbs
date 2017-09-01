@@ -8,14 +8,14 @@
 				<span class="header-description">{{tag.description}}</span>
 			{{/if}}
 		</span>
+		{{#if tag.feature_image}}
+		<div class="header-cover" style="background-image: url('{{tag.feature_image}}');"></div>
+		{{else}}
+		{{#if @blog.cover_image}}
+		<div class="header-cover" style="background-image: url('{{@blog.cover_image}}');"></div>
+		{{/if}}
+		{{/if}}
 	</div>
-	{{#if tag.feature_image}}
-	<div class="header-cover" style="background-image: url('{{tag.feature_image}}');"></div>
-	{{else}}
-	{{#if @blog.cover_image}}
-	<div class="header-cover" style="background-image: url('{{@blog.cover_image}}');"></div>
-	{{/if}}
-	{{/if}}
 </header>
 
 <div id="post-index" class="container">

@@ -13,10 +13,10 @@
 				<span class="header-description">{{@blog.description}}</span>
 			{{/if}}
 		</a>
+		{{#if @blog.cover_image}}
+		<div class="header-cover" style="background-image: url({{@blog.cover_image}})"></div>
+		{{/if}}
 	</div>
-	{{#if @blog.cover_image}}
-	<div class="header-cover" style="background-image: url({{@blog.cover_image}})"></div>
-	{{/if}}
 </header>
 
 <div id="post-index" class="container">

@@ -6,12 +6,12 @@
 
     <article class="{{post_class}}">
 
-		<header class="post-header{{#if image}} has-cover{{/if}}">
+		<header class="post-header{{#if feature_image}} has-cover{{/if}}">
 			<div class="inner">
 				<h1 class="post-title">{{{title}}}</h1>
 			</div>
-			{{#if image}}
-			<div class="post-cover" style="background-image: url('{{image}}');"></div>
+			{{#if feature_image}}
+			<div class="post-cover" style="background-image: url('{{img_url feature_image}}');"></div>
 			{{/if}}
 		</header>
 		

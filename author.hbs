@@ -29,14 +29,14 @@
 				{{/if}}
 			</span>
 		</span>
+		{{#if cover}}
+		<div class="header-cover" style="background-image: url('{{cover}}');"></div>
+		{{else}}
+		{{#if @blog.cover}}
+		<div class="header-cover" style="background-image: url('{{@blog.cover}}');"></div>
+		{{/if}}
+		{{/if}}
 	</div>
-	{{#if cover}}
-	<div class="header-cover" style="background-image: url('{{cover}}');"></div>
-	{{else}}
-	{{#if @blog.cover}}
-	<div class="header-cover" style="background-image: url('{{@blog.cover}}');"></div>
-	{{/if}}
-	{{/if}}
 </header>
 
 {{/author}}

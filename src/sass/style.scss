@@ -514,9 +514,9 @@ body {
 }
 
 .pushed-prev {
-	
+
 	.post-list {
-	
+
 		.post {
 			animation-name: pushedPrevFade;
 		}
@@ -524,9 +524,9 @@ body {
 }
 
 .pushed-next {
-	
+
 	.post-list {
-	
+
 		.post {
 			animation-name: pushedNextFade;
 		}
@@ -567,17 +567,17 @@ body {
 	transition: all ease-out 0.1s;
 	color: $color-primary-default;
 	z-index: 120;
-	
+
 	&:hover,
 	&:focus {
 		color: $color-primary-active;
 		background: $color-gray-97;
-		
+
 		.menu-button-bar {
 			background: $color-primary-active;
 		}
 	}
-	
+
 	.menu-button-bar {
 		position: absolute;
 		top: 50%;
@@ -589,7 +589,7 @@ body {
 		height: 2px;
 		border-radius: 1px;
 		background: $color-primary-default;
-		
+
 		transition: all ease-out 0.2s;
 		transform-style: preserve-3d;
 		transform: rotate(0);
@@ -597,27 +597,27 @@ body {
 		&.menu-button-bar-1 {
 			transform: translateY(-0.334em);
 		}
-		
+
 		&.menu-button-bar-2 {}
-		
+
 		&.menu-button-bar-3 {
 			transform: translateY(0.334em);
 		}
 	}
-	
+
 	&.active {
-		
+
 		.menu-button-bar {
-	
+
 			&.menu-button-bar-1 {
 				transform: translateY(0) rotate(-135deg);
 			}
-			
+
 			&.menu-button-bar-2 {
 				width: 2px;
 				margin-left: -1px;
 			}
-			
+
 			&.menu-button-bar-3 {
 				transform: translateY(0) rotate(135deg);
 			}
@@ -626,12 +626,12 @@ body {
 }
 
 .menu-hidden {
-	
+
 	#menu-button {
 		display: block;
-		
+
 		&.active {
-			
+
 			i {
 				transform: rotate(135deg);
 			}
@@ -652,7 +652,7 @@ body {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		
+
 		&:after {
 			clear: both;
 			content: '';
@@ -663,7 +663,7 @@ body {
 			position: relative;
 			float: left;
 			margin-right: 2em;
-			
+
 			&:before {
 				display: none;
 			}
@@ -680,7 +680,7 @@ body {
 				font-weight: inherit;
 				font-weight: 400;
 				color: $color-gray-50;
-				
+
 				&:before {
 					content: '';
 					position: absolute;
@@ -692,16 +692,16 @@ body {
 					border-bottom: 1px solid transparent;
 					transition: all ease-out 0.2s;
 				}
-				
+
 				i {
 					color: inherit;
 				}
 
 				&:hover,
 				&:focus {
-					
+
 					color: $color-gray-25;
-					
+
 					&:before {
 						border-bottom-color: $color-gray-65;
 					}
@@ -716,10 +716,10 @@ body {
 					}
 				}
 			}
-			
+
 			&.icon {
 				margin: 0;
-				
+
 				a {
 					display: inline-block;
 					padding-left: 0.5em;
@@ -745,23 +745,23 @@ body {
 		transition: all ease-out 0.2s;
 		opacity: 0;
 		transform: translate3d(-100%,0,0);
-		
+
 		.menu-list {
-	
+
 			.menu-list-item {
 				float: none;
 				margin-right: 0;
 				text-align: center;
-	
+
 				a {
 					padding-left: 1.143em;
 					color: $color-gray-85;
-					
+
 					&:hover,
 					&:focus {
 						background: $color-gray-15;
 					}
-					
+
 					&:before {
 						bottom: 0;
 						width: 0;
@@ -780,14 +780,14 @@ body {
 						}
 					}
 				}
-				
+
 				&.icon {
 
 					a {
 						width: 2.286em;
 						padding-left: 1em;
 						padding-right: 1em;
-						
+
 						&:hover,
 						&:focus {
 							color: $color-primary-default;
@@ -797,7 +797,7 @@ body {
 			}
 		}
 	}
-	
+
 	&.menu-active {
 		overflow: hidden;
 
@@ -816,7 +816,7 @@ body {
 	position: relative;
 	padding: 10em 0 4em;
 	border-bottom: 1px solid $color-gray-90;
-	
+
 	&.has-cover {
 		border-bottom: 0;
 	}
@@ -826,7 +826,7 @@ body {
 		display: block;
 		z-index: 2;
 	}
-	
+
 	.header-logo {
 		float: left;
 		height: 4em;
@@ -889,7 +889,7 @@ body {
 
 		.header-name {
 			color: #fff;
-			
+
 			em {
 				color: #fff;
 				opacity: 0.8;
@@ -898,7 +898,7 @@ body {
 					background: #fff;
 					opacity: 1;
 				}
-			}	
+			}
 		}
 	}
 
@@ -926,7 +926,7 @@ body {
 		border-radius: 3em;
 		border: 2px solid $color-primary-default;
 		background: $color-primary-active;
-		
+
 		@media only screen and (max-width: $breakpoint-phone) {
 			float: none;
 			width: 3em;
@@ -963,7 +963,7 @@ body {
 			a {
 				color: inherit;
 				text-decoration: none;
-				
+
 				&:hover,
 				&:focus {
 					text-decoration: underline;
@@ -1061,7 +1061,7 @@ body {
 		font-weight: 700;
 		text-indent: -1px;
 		margin: 0.25em 0 0.75em;
-		
+
 		@media only screen and (max-width: $breakpoint-phone) {
 			font-size: 1.5em;
 			line-height: 1.167em;
@@ -1079,40 +1079,40 @@ body {
 		position: relative;
 		padding: 10em 0 0;
 		transition: all ease-out 0.6s;
-		
+
 		&.has-cover {
 			padding: 16em 0 2em;
 			margin-bottom: 6em;
 		}
-		
+
 		.inner {
 			position: relative;
 			z-index: 2;
 		}
-		
+
 		.post-meta {
-			
+
 		}
-		
+
 		&.has-cover {
-			
+
 			.post-meta {
 				color: #fff;
 			}
 		}
-		
+
 		.post-title {
 			margin-top: 0;
 			font-weight: 900;
 		}
-		
+
 		&.has-cover {
-			
+
 			.post-title {
 				color: #fff;
 			}
 		}
-		
+
 		.post-cover {
 			position: absolute;
 			width: 100%;
@@ -1131,7 +1131,7 @@ body {
 				top: 0;
 				background: rgba(0,0,0,0.2);
 			}
-	
+
 			&:after {
 				position: absolute;
 				width: 100%;
@@ -1238,7 +1238,7 @@ body {
 
 				&:before {
 					font-family: "icons";
-					content: '\e800';
+					content: '\e808';
 					position: absolute;
 					left: auto;
 					top: auto;
@@ -1268,7 +1268,7 @@ body {
 		&:focus {
 
 			.inner {
-				
+
 			}
 		}
 
@@ -1277,7 +1277,7 @@ body {
 		}
 
 		.post-title {
-			
+
 		}
 
 		.post-excerpt {
@@ -1365,7 +1365,7 @@ body {
 			&:focus {
 
 			}
-			
+
 			&:before {
 				margin: auto;
 			}
@@ -1405,7 +1405,7 @@ body {
 	align-items: stretch;
 	border-top: 1px solid $color-gray-90;
 	border-bottom: 1px solid $color-gray-90;
-	
+
 	@media only screen and (max-width: $breakpoint-tablet) {
 		display: block;
 	}
@@ -1427,9 +1427,9 @@ body {
 		&:hover,
 		&:focus {
 			background: $color-gray-90;
-			
+
 			.post-nav-post {
-				
+
 				&.has-cover {
 
 					.post-nav-icon {
@@ -1439,40 +1439,40 @@ body {
 					.post-nav-title {
 						color: #fff;
 					}
-		
+
 					.post-nav-excerpt {
 						color: #fff;
 						opacity: 0.75;
 					}
 				}
-				
+
 				.post-nav-image {
 					filter: blur(0px);
 					opacity: 1;
 					transform: scale(1.05);
-					
+
 					&:after {
 						opacity: 0.2;
 					}
 				}
 			}
 		}
-		
+
 		&.post-nav-next {
-			
+
 			.post-nav-post {
 				padding-left: 4em;
 				padding-right: 2em;
-	
+
 				.post-nav-icon {
 					left: 0;
-	
+
 					i {
 						left: -0.05em;
 					}
 				}
 			}
-			
+
 			&:after {
 				content: '';
 				position: absolute;
@@ -1481,7 +1481,7 @@ body {
 				width: 1px;
 				height: 100%;
 				background: $color-gray-90;
-				
+
 				@media only screen and (max-width: $breakpoint-tablet) {
 					width: 100%;
 					height: 1px;
@@ -1490,21 +1490,21 @@ body {
 		}
 
 		&.post-nav-prev {
-			
+
 			.post-nav-post {
 				padding-right: 4em;
 				padding-left: 2em;
-	
+
 				.post-nav-icon {
 					right: 0;
-	
+
 					i {
 						right: -0.05em;
 					}
 				}
 			}
 		}
-		
+
 		.post-nav-post {
 			position: relative;
 			display: block;
@@ -1512,9 +1512,9 @@ body {
 			padding-top: 1em;
 			padding-bottom: 2em;
 			overflow: hidden;
-			
+
 			&.has-cover {}
-	
+
 			.post-nav-icon {
 				position: absolute;
 				top: 50%;
@@ -1530,22 +1530,22 @@ body {
 				background: transparent;
 				color: $color-primary-default;
 				transition: all ease-out 0.1s;
-				
+
 				&:hover,
 				&:focus {
 					color: $color-primary-active;
 				}
-	
+
 				i {
 					position: relative;
 					color: inherit;
-					
+
 					&:before {
 						margin: auto;
 					}
 				}
 			}
-			
+
 			.post-nav-image {
 				position: absolute;
 				left: 0;
@@ -1558,7 +1558,7 @@ body {
 				filter: blur(5px);
 				opacity: 0;
 				transition: all ease-out 0.2s;
-				
+
 				&:after {
 					content: '';
 					position: absolute;
@@ -1571,7 +1571,7 @@ body {
 					opacity: 0;
 					transition: all ease-out 0.2s;
 				}
-				
+
 				&:before {
 					position: absolute;
 					width: 100%;

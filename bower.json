@@ -1,14 +1,12 @@
 {
   "name": "austere",
   "devDependencies": {
-    "fitvids": "~1.1.0",
-    "highlightjs": "~8.8.0",
-    "history.js": "~1.8.0",
-    "imagesloaded": "~3.2.0",
-    "jquery": "~2.1.4",
-    "masonry": "~3.3.2",
-    "normalize.css": "~3.0.3",
+    "fitvids": "^1.2.0",
+    "highlightjs": "^9.12.0",
+    "history.js": "^1.8.0",
+    "jquery": "^3.3.1",
     "nprogress": "~0.2.0",
-    "reading-time": "~1.0.0"
+    "reading-time": "~1.0.0",
+    "normalize-css": "normalize.css#^7.0.0"
   }
 }

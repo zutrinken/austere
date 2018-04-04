@@ -19,12 +19,12 @@
 				<div class="post-cover" style="background-image: url('{{img_url feature_image}}');"></div>
 				{{/if}}
 			</header>
-		
+
 			<div class="inner">
 				<section class="post-content">
 					{{content}}
 				</section>
-				
+
 				<footer class="post-footer">
 					<div class="post-tags">
 						{{tags separator=" "}}
@@ -41,45 +41,43 @@
 						</a>
 					</div>
 				</footer>
-				
+
 				<aside class="post-comments">
 					<div id="disqus_thread"></div>
 				</aside>
-				
-				</div>
-			</div>
 
-			<nav class="post-nav">
-				{{#next_post}}
-					<a class="post-nav-item post-nav-next" href="{{url absolute="true"}}" title="{{title}}">
-						<span class="post-nav-post{{#if feature_image}} has-cover{{/if}}">
-							{{#if feature_image}}
-							<figure class="post-nav-image" style="background-image: url({{img_url feature_image}})"></figure>
-							{{/if}}
-							<span class="post-nav-icon">
-								<i class="icon-arrow-left"></i>
+				<nav class="post-nav">
+					{{#next_post}}
+						<a class="post-nav-item post-nav-next" href="{{url absolute="true"}}" title="{{title}}">
+							<span class="post-nav-post{{#if feature_image}} has-cover{{/if}}">
+								{{#if feature_image}}
+								<figure class="post-nav-image" style="background-image: url({{img_url feature_image}})"></figure>
+								{{/if}}
+								<span class="post-nav-icon">
+									<i class="icon-arrow-left"></i>
+								</span>
+								<h4 class="post-nav-title">{{title}}</h4>
+								<p class="post-nav-excerpt">{{excerpt words="19"}}&hellip;</p>
 							</span>
-							<h4 class="post-nav-title">{{title}}</h4>
-							<p class="post-nav-excerpt">{{excerpt words="19"}}&hellip;</p>
-						</span>
-					</a>
-				{{/next_post}}
-				{{#prev_post}}
-					<a class="post-nav-item post-nav-prev" href="{{url absolute="true"}}" title="{{title}}">
-						<span class="post-nav-post{{#if feature_image}} has-cover{{/if}}">
-							{{#if feature_image}}
-							<figure class="post-nav-image" style="background-image: url({{img_url feature_image}})"></figure>
-							{{/if}}
-							<span class="post-nav-icon">
-								<i class="icon-arrow-right"></i>
+						</a>
+					{{/next_post}}
+					{{#prev_post}}
+						<a class="post-nav-item post-nav-prev" href="{{url absolute="true"}}" title="{{title}}">
+							<span class="post-nav-post{{#if feature_image}} has-cover{{/if}}">
+								{{#if feature_image}}
+								<figure class="post-nav-image" style="background-image: url({{img_url feature_image}})"></figure>
+								{{/if}}
+								<span class="post-nav-icon">
+									<i class="icon-arrow-right"></i>
+								</span>
+								<h4 class="post-nav-title">{{title}}</h4>
+								<p class="post-nav-excerpt">{{excerpt words="19"}}&hellip;</p>
 							</span>
-							<h4 class="post-nav-title">{{title}}</h4>
-							<p class="post-nav-excerpt">{{excerpt words="19"}}&hellip;</p>
-						</span>
-					</a>
-				{{/prev_post}}
-				<div class="clear"></div>
-			</nav>
+						</a>
+					{{/prev_post}}
+					<div class="clear"></div>
+				</nav>
+			</div>
 	</article>
 </main>
 {{/post}}

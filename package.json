@@ -1,7 +1,7 @@
 {
   "name": "austere",
   "description": "Ghost Theme",
-  "demo": "http://austere.zutrinken.com",
+  "demo": "https://austere.zutrinken.com",
   "version": "1.1.2",
   "engines": {
     "ghost": ">=1.0.0"
@@ -14,7 +14,7 @@
   "author": {
     "name": "Peter Amende",
     "email": "xoxo@zutrinken.com",
-    "url": "http://zutrinken.com"
+    "url": "https://zutrinken.com"
   },
   "gpm": {
     "type": "theme",

@@ -1,6 +1,6 @@
 # Austere
 
-An elegant AJAX driven theme for [Ghost](http://github.com/tryghost/ghost/) by [Peter Amende](http://zutrinken.com/).
+An elegant AJAX driven theme for [Ghost](https://github.com/tryghost/ghost/) by [Peter Amende](https://zutrinken.com/).
 
 ***
 
@@ -8,10 +8,10 @@ _**Hint:** This theme works with AJAX, so it won’t work with multiple domains 
 
 ## Demo
 
-* [Blog](http://austere.zutrinken.com)
-* [Post](http://austere.zutrinken.com/demo)
-* [Tags](http://austere.zutrinken.com/tag/general)
-* [Author](http://austere.zutrinken.com/author/zutrinken)
+* [Blog](https://austere.zutrinken.com)
+* [Post](https://austere.zutrinken.com/demo)
+* [Tags](https://austere.zutrinken.com/tag/general)
+* [Author](https://austere.zutrinken.com/author/zutrinken)
 
 ## Screenshots
 

@@ -2,17 +2,6 @@
 
 An elegant AJAX driven theme for [Ghost](https://github.com/tryghost/ghost/) by [Peter Amende](https://zutrinken.com/).
 
-***
-
-_**Hint:** This theme works with AJAX, so it won’t work with multiple domains properly! Use redirects to only one domain instead. Also make sure you haven’t jQuery injected in your footer due to [Ghosts migration method](http://dev.ghost.org/no-more-jquery/). This can break the layout!_
-
-## Demo
-
-* [Blog](https://austere.zutrinken.com)
-* [Post](https://austere.zutrinken.com/demo)
-* [Tags](https://austere.zutrinken.com/tag/general)
-* [Author](https://austere.zutrinken.com/author/zutrinken)
-
 ## Screenshots
 
 <table>
@@ -25,17 +14,6 @@ _**Hint:** This theme works with AJAX, so it won’t work with multiple domains 
 </td>
 </tr>
 </table>
-
-## Features
-
-* Responsive layout
-* Blog navigation
-* Post navigation
-* Cover images for blog, tag and author archives
-* Featured posts style
-* Automatic code syntax highlight and line numbers
-* Disqus support
-* Sharing buttons
 
 ## Setup
 
@@ -69,4 +47,4 @@ Distribute Grunt project:
 
 ## Copyright & License
 
-Copyright (C) 2016-2018 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/austere/blob/master/LICENSE).
+Copyright (C) 2016-2019 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/austere/blob/master/LICENSE).
